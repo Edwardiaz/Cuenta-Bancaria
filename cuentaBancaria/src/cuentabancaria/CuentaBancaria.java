@@ -2,21 +2,30 @@
 package cuentabancaria;
 
 import java.util.Scanner;
-import java.util.Set;
 
 /**
  *
  * @author educacion
  */
-public class CuentaBancaria {
+public class CuentaBancaria { 
 
     private String nombreCliente;
     private String numeroCuenta;
     private double interes;
     private double saldo;
 
-    public CuentaBancaria() {
+    public CuentaBancaria() { 
     }
+
+    public CuentaBancaria(CuentaBancaria cb) {
+        
+        this.nombreCliente = cb.nombreCliente;
+        this.numeroCuenta = cb.numeroCuenta;
+        this.interes = cb.interes;
+        this.saldo = cb.saldo;
+    }
+     
+    
     
     public CuentaBancaria(String nombreCliente, String numeroCuenta, double interes, double saldo) {
         this.nombreCliente = nombreCliente;
